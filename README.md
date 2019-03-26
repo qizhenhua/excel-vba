@@ -1,18 +1,15 @@
 # excel-vba
 Some VBA code for excel, for machanical engineer to research BOM (bill of material)
-英文懒得打
-这是我在工作之余编的一些与BOM相关的Excel程序， 有些年头了，
-虽然说是作者本人， 但是有些算法我自己也看不懂了。
 
-treeview-start 是最早编的，主要是以树形结构查看从Agile中导出的BOM，修改下大概SAP里导出的也可以看吧。没试过， 可能要修改下。这个基本没怎么用了，不过这个是后续代码的基础
+treeview-start use to view BOM data in tree, make humen understand data more easy. It is a early version, now it replaced by below app. 
 
-BOM picker 是基于treeview的，增加了一些功能， 比如删除指定料号的下阶，生成不带阶次的BOM，可以读入从proe里导出的BOM。。。等功能，最有用的大概是算物料的数量吧。
+BOM picker base on treeview，add some function. For example, delete children of some part number, generate a flat BOM (no level), read BOM tree from Pro/E... the most useful function is calculating material's total quantity.
 
-BOM compare是用来比较BOM的，同一总成不同版次的比较， 不同总成之间的比较， 有自动比较和手动比较，并可以生成一个报告，以及一个ECN list,为后续的程序提供数据基础
+BOM compare use to compare BOM, it has auto function and manual function to generate a report for human and for computer (ECN list) for next step.
 
-Table filler是根据上个程序生成的ECN list填表。虽然科技发展很牛哔了，但是配合一些愚蠢的流程，不得不填一些愚蠢的表格。
+Table filler according the ECN list genarated from previous step. It is not neccessary for most situation, but sometimes you have to fill some stupid tables.
 
-Project Control table 是个专案管理程序，自用的所有没那么多的讲究。因工作上流程太多且又臭又长，难免忘记一些事项，所以把流程上的一些动作编成可选项，把要完成的工作列个树形清单。事情太多太杂的时候可以用下，还蛮好用的。
+Project Control table is a project manage app, if you have a lot of routing need to remember and check, it can help you.
 
-声明：这些代码的版权并不属于我在的公司，因为我是靠这些个偷懒用的，所以没有拿去邀功，公司里仅限于几个同事在部分使用。
-版权当然属于我的，虽然并没有什么用。
+声明：以上工作之余写的，用到了一些样例数据不属于我的， 其他版权属于Qi Zhenhua的，虽然并没有什么用。
+
